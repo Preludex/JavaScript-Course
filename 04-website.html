@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML CSS Review</title>
+    <style>
+        .red-button {
+          background-color: red;
+          color: white;
+          border: none;
+        }
+        .yellow-button{
+         background-color: rgba(200, 255, 0, 0.753);
+        }
+        .green-button{
+          background-color: green;
+        }
+        .warning-button{
+          background-color: red;
+          color: blue;
+          border: none;
+        }
+        </style>
+      </head>
+    <body>
+      <button title="This is the last warning" class="warning-button" onclick="alert('Just joking, nothing is happening');
+      ">
+      Do not touch this button
+      </button>
+      <p>
+       <button title="Good Job!" class="red-button" onclick="
+        alert('Good Job!');
+        ">
+        hello
+      </button>
+      </p>
+      <p>
+        Paragraph of <button title="Prueba" class="yellow-button">hello</button> text
+      </p> 
+      <p>
+        Paragraph of <button class="green-button" onclick="
+          console.log('Loading..')
+          alert(2+2);
+          ">hello</button> text
+      </p> 
+
+      <script>
+        // This is a comment.
+        alert('hello');
+        console.log(2+2);
+        console.log('some'+'text');
+      </script>
+    </body>
+</html>
