@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>DOM Project Name</title>
+    </head>
+    <body>
+      <p>Button Test</p>
+      <p></p>
+      <input class="js-name-input" placeholder="Name" onkeydown="handleNameKeydown(event);">
+      <button class="js-name-button" onclick="
+      namePresentation();
+      ">Submit</button>
+      <p class="js-salutations"></p>
+
+      <script>
+        function namePresentation () {
+          const inputElement = document.querySelector('.js-name-input');let name = String(inputElement.value);
+          document.querySelector('.js-salutations').innerHTML = `Your name is: ${name}`;
+        }
+
+        function handleNameKeydown (event) {
+          if (event.key === 'Enter') {
+            namePresentation ();
+          }
+        }
+      </script>
+
+    </body>
+</html>
